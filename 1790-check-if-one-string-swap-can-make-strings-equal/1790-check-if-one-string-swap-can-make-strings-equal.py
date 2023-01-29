@@ -9,11 +9,14 @@ class Solution:
                     index.append(i)
             else:
                 return False
-            
+
         if counter==2:
             s1 = list(s1)
-            s1[index[0]], s1[index[1]]=s1[index[1]], s1[index[0]]
+            temp=s1[index[0]]
+            s1[index[0]]=s1[index[1]]
+            s1[index[1]]=temp
             s1=''.join(s1)
             print(s1)
+
         return True if s1==s2 else False
         
