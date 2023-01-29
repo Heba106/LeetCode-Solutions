@@ -12,9 +12,7 @@ class Solution:
             
         if counter==2:
             s1 = list(s1)
-            temp=s1[index[0]]
-            s1[index[0]]=s1[index[1]]
-            s1[index[1]]=temp
+            s1[index[0]], s1[index[1]]=s1[index[1]], s1[index[0]]
             s1=''.join(s1)
             print(s1)
         return True if s1==s2 else False
