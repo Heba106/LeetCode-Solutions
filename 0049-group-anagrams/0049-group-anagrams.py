@@ -12,4 +12,4 @@ class Solution:
         
         for item in hash_table:
             result.append(hash_table[item])
-        return sorted(result, key=len )
+        return result
