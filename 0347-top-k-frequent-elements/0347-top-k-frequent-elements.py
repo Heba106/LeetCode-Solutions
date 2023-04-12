@@ -5,7 +5,7 @@ class Solution:
         for el in nums:
             hash_table[el] = 1 + hash_table.get(el , 0)
         
-        hash_table = dict(sorted(hash_table.items(), key=lambda item: item[1], reverse= True))
+        hash_table = dict(sorted(hash_table.items(), key=lambda x: x[1], reverse= True))
         for i, key in enumerate(hash_table.keys()):
             if i == k:
                 break
