@@ -8,8 +8,7 @@ class Solution:
                 break
             if i > 0 and (nums[i] == nums[i-1]):
                 continue
-            l = i + 1
-            r = len(nums) - 1
+            l, r = i + 1, len(nums) - 1
             while (l < r):
                 if nums[l] + nums[r] < 0 - nums[i]:
                     l += 1
