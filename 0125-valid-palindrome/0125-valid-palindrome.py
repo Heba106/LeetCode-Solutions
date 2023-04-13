@@ -3,6 +3,7 @@ class Solution:
         s = s.lower()
         i = 0;
         j = len(s) - 1
+        
         while (i < j):
             if not (s[i].isalnum()):
                 i += 1
@@ -12,8 +13,6 @@ class Solution:
                 continue
             if (s[i] != s[j]):
                 return False
-            print(s[i])
-            print(s[j])
             i += 1
             j -= 1
     
