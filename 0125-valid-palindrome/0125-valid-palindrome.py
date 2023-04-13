@@ -11,9 +11,10 @@ class Solution:
             elif not (s[j].isalnum()):
                 j -= 1
                 continue
-            if (s[i] != s[j]):
+            elif (s[i] != s[j]):
                 return False
-            i += 1
-            j -= 1
+            else:
+                i += 1
+                j -= 1
     
         return True
